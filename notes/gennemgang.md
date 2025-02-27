@@ -2,6 +2,14 @@
 
 ## Målsætning: Demystify REST-API'er i og omkring Azure
 
+## Authentication via Tokens
+
+- Connect-AzAccount?
+- Token flow ![Token Flow](PowerShellFlow.drawio.png)
+- ~/.Azure/AzureRmContext.json // C:\Users\<YourUser>\.Azure\AzureRmContext.json
+- Hvordan bruges disse tokens i scripts?
+  [PowerShell Profile](../src/PSProfile.ps1)
+
 ## Fordele ved REST-API over Azure Powershell CMDlets
 
 [Resource Group Comparison](../src/Get-ResourceGroupComparison.ps1)
@@ -43,4 +51,8 @@ Hente alle Azure devOps projekter ud fra en organisation
 
 GET https://dev.azure.com/{organization}/_apis/projects?api-version=7.1
 
-Invoke-restMethod -Uri "https://dev.azure.com/fellowminddk/_apis/projects?api-version=7.1" -Headers $headers -Method Get
+### Bundling af REST-API Kald med Batch-API'et
+
+- Hvad, hvorfor og hvordan i et utopisk scenarie
+
+[Batch API](../src/azureBatchAPI.ps1)
