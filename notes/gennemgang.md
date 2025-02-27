@@ -31,6 +31,7 @@
 - Bruger KQL syntax
 - Parallelitet er indbygget, og derfor er hastigheden markant højere
 - Kan bruges til at lave queries på tværs af subscriptions
+- Kan IKKE bruges til at lave ændringer i Azure
 
 [Azure Resource Graph](../src/azureResourceGraph.ps1)
 
